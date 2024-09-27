@@ -156,19 +156,41 @@ h2{
 }
 
 /*FOOTER*/
-footer{
+.footer{
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     margin-top: 5%;
-    padding-top: 2%;
+    padding: 2%;
     font-family: "Baskervville SC", serif;
-    font-weight: 20px;
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
+    
 
 }
-footer p{
+.footer p{
     font-size: 20px;
+}
+
+.footer ul li{
+    list-style:none;
+}
+
+.mapa p{
+    text-align: center;
+    padding: 5px;
+
+}
+
+.mapa iframe{
+    width: 300px;
+    height: 200px;
+}
+
+.redes{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
