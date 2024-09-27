@@ -84,7 +84,6 @@ nav ul{
 }
 
 nav li{
-  
     text-align: center;
     padding: 15px;
     font-family: "Baskervville SC", serif;
@@ -198,3 +197,22 @@ h2{
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+ /*VETERINARIAS*/ 
+#veterinarias section{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(218, 252, 236, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#veterinarias section img{
+    width: 600px;
+    height: 400px;
+}
+
