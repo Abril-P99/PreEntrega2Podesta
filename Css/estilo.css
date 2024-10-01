@@ -275,66 +275,57 @@ h4{
     margin: 2%;
 }
 
-z
+
 /*REFUGIOS*/
 
 /*PRODUCTOS*/
 
-#grid-container {
+#grid-container{
     width: 100%;
     height: 90%;
     display: grid;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 500px 500px;
     grid-template-columns: 30% 30% 30%;
     grid-template-areas: "a1 a2"
                          "a3 a4"
                          "a5 a6";
+    margin-left: 20%;  
+    margin-top: 5%;                   
 
 
+}
+
+.productos{
+    background-color: rgba(218, 252, 236, 0.8);
+    width: 350px;
+    height: 400px;
+   
+   
 }
 
 .productoUno{
     grid-area: a1;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
-
 }
 .productoDos{
     grid-area: a2;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
-}
+}    
+    
+
 .productoTres{
     grid-area: a3;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
+    
 }
 .productoCuatro{
     grid-area: a4;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
+    
 }
 .productoCinco{
     grid-area: a5;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
+    
 }
 .productoSeis{
     grid-area: a6;
-    background-color: rgba(218, 252, 236, 0.8);
-    width: 350px;
-    height: 400px;
-    margin-bottom: 2%;
+   
 }
 .productoUno:hover{
     transform: scale(1.1);
