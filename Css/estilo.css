@@ -289,17 +289,23 @@ h4{
     grid-template-areas: "a1 a2"
                          "a3 a4"
                          "a5 a6";
-    margin-left: 20%;  
-    margin-top: 5%;                   
+   
+    text-align: center;
+    font-size: 15px;  
+    background-color: rgba(218, 252, 236, 0.8); 
+    padding-bottom: 5%;               
 
 
 }
 
 .productos{
-    background-color: rgba(218, 252, 236, 0.8);
+    background-color: rgba(42, 46, 44, 0.9);
     width: 350px;
     height: 400px;
-   
+    margin-left: 60%;  
+    margin-top: 10%;
+    color: #ffffff;
+    padding: 2%;
    
 }
 
