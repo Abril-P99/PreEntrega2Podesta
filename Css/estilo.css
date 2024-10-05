@@ -461,7 +461,9 @@ h4{
         margin: 5% 2%;
     }
 
-
-
-
 }
+@media(max-width:600px){
+    /* NAVBAR*/
+     nav li{
+        font-size: 8px;
+    }
