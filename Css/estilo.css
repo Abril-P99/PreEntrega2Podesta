@@ -88,6 +88,9 @@ nav li{
     border-left: 1px white solid;
     font-size: 18px;
 }
+
+
+
 /*BOTONES*/
 .fill:focus,.fill:hover{
     box-shadow:inset 0 0 0 2em var(--hover) 
@@ -125,6 +128,7 @@ h2{
     font-size: 100px; 
     padding-top: 5%;
     padding-bottom: 2%;
+    background-color: rgba(218, 252, 236, 0.8);
    
 }
 #descuento{
@@ -255,61 +259,86 @@ h4{
 
 /*SOBRE NOSOTROS*/
 
-#sobreNosotros{
-    width: 100%;
+#grid-nosotros{
+    display: grid;
     height: 90%;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a1 a2"
+                         "a1 a3"
+                         "a1 a4";
     background-color: rgba(218, 252, 236, 0.8);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
+    padding: 8% 0%;
+
 
 }
 
-#sobreNosotros img{
-    width: 700px;
-    height: 500px;
+#grid-nosotros img{
+    width: 400px;
+    height: 300px;
+}
+#grid-nosotros p{
+    color: #000007;
+    font-size: 35px;
+}
+.img-uno{
+    grid-area: a2;
+    margin-left: 15%;
 }
 
-#sobreNosotros p{
-    font-size: 25px;
-    text-align:center;
-    margin: 2%;
+.img-dos{
+    grid-area: a3;
 }
+.img-tres{
+    grid-area: a4;
+    margin-left: 15%;
+}
+.parrafo{
+    grid-area: a1;
+} 
 
 
 /*REFUGIOS*/
+.faster .carousel-inner{
+    transition: 10s;
+}
 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.flex-container .btn{
+    background-color: #040453;
+    color: #ffffff;
+}
+
+.flex-container .btn:hover{
+    background-color: #66f3ad;
+    color: #040453;
+}
 
 
 
 /*PRODUCTOS*/
 
-#grid-container{
+#product-container{
     width: 100%;
     height: 90%;
-    display: grid;
-    grid-template-rows: 500px 500px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-areas: "a1 a2"
-                         "a3 a4"
-                         "a5 a6";
-   
-    text-align: center;
-    font-size: 15px;  
-    background-color: rgba(218, 252, 236, 0.8); 
-    padding-bottom: 5%;    
-             
-
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding-right:  25%;
+   padding-bottom: 5%;
+   background-color: rgba(218, 252, 236, 0.8);
 
 }
 
 
 .productos{
-    background-color: rgba(42, 46, 44, 0.9);
+    background-color: rgba(9, 10, 10, 0.9);
     width: 350px;
     height: 400px;
     margin-left: 60%;  
@@ -317,113 +346,122 @@ h4{
     color: #ffffff;
     padding-bottom: 15%;
     padding-top: 5%;
-   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     
 
 }
-
 .productos p{
-    padding: 2% 2%;
-
-}
-.productoUno{
-    grid-area: a1;
-}
-.productoDos{
-    grid-area: a2;
-}    
-    
-
-.productoTres{
-    grid-area: a3;
-    
-}
-.productoCuatro{
-    grid-area: a4;
-    
-}
-.productoCinco{
-    grid-area: a5;
-    
-}
-.productoSeis{
-    grid-area: a6;
-   
+    margin-top: 3%;
 }
 
-.productoUno:hover{
-    transform: scale(1.1);
- }
-
- .productoDos:hover{
-    transform: scale(1.1);
- }
-
- .productoTres:hover{
-    transform: scale(1.1);
- }
-
- .productoCuatro:hover{
-    transform: scale(1.1);
- }
-
- .productoCinco:hover{
-    transform: scale(1.1);
- }
-
- .productoSeis:hover{
-    transform: scale(1.1);
- }
- 
-
-#grid-container img{
+#product-container img{
     width: 250px;
     height: 300px;
 }
 
-@media (max-width: 1000px) {
-    nav ul{ 
-        display: none;
+@media(max-width:1000px){
+    /* NAVBAR*/
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .icono-responsive{
-        display: block;
-        cursor: pointer;
-    }
-    .icono-responsive .menu{
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        margin: 6px 0px;
 
+    nav li{
+        font-size: 12px;
     }
-    nav{
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        right: 0px;
-        width: 100vw;
-        transition: 0.5s;
-        overflow: hidden;
-
+    .titulo{
+        font-size: 40px;
     }
-    nav :active{
-        height: 450px;
+    .lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       
+        
     }
-    nav ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
+    .producto{
+        margin: 5%;
+    }
+    #descuento{
+        align-items: center;
+        margin: 1%;
+    }
+    /* FOOTER*/
+    .footer p{
+        font-size: 12px;
+    }
+    .mapa p{
         text-align: center;
-        transition: 0.5s;
-        opacity: 0;
+        padding: 5px;
+        font-size: 15PX;
+    
     }
-    nav :active ul{
-        opacity: 1;
+    
+    .mapa iframe{
+        width: 180px;
+        height: 110px;
     }
-    nav :active ul li a{
-        margin-bottom: 20px;
+
+
+
+    /*VETERINARIA*/
+    #veterinarias section img{
+        width: 500px;
+        height: 300px;
+    }
+    #veterinarias section{
+        width: 600px;
+        height: 450px;
+        padding-bottom: 50%;
+    }
+    #veterinarias p{
+        margin-top: 2%;
+        font-size: 13px;
+    }
+
+    /*ABOUT US*/
+    #grid-nosotros p{
+       padding-left: 5%;
+    }
+
+    /*REFUGIOS*/
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .flex-container .card{
+        margin: 5%;
+        justify-content: center;
+       
+    }
+
+    /*PRODUCTOS*/
+    #product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #product-container .productos{
+        justify-content: center;
+        padding-top: 20%;
+        margin-left: 20%;
 
 
     }
+    #product-container .productos p{
+        margin: 5% 2%;
+    }
+
+
+
+
 }
