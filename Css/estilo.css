@@ -56,14 +56,21 @@ body{
 }
 
 /*TITULO*/
+
+
 .titulo{
     font-size: 65px;
+    color: #66f3ad;
     text-align: center;
     float: left;
     padding-left: 5%;
-    color: #66f3ad;
     text-shadow: 1px 2px 2px black, 0 0 25px rgb(35, 209, 142), 0 0 5px rgb(30, 43, 219);
+    
 }
+
+
+
+
 
 
 /*BARRA DE NAVEGACION*/
@@ -465,5 +472,5 @@ h4{
 @media(max-width:600px){
     /* NAVBAR*/
      nav li{
-        font-size: 8px;
+        font-size: 8  px;
     }
